@@ -1,7 +1,19 @@
+//Css
+const cssBg                   = document.getElementById("background_animation")
+//script
+const src_cursor_follower     = document.getElementById('src_cursor_follower');
+
 const middle_section          = document.getElementById('middle_section');
 const btn_card_magic_1        = document.getElementById('card_magic_1');
 const btn_loading_animation_1 = document.getElementById('btn_loading_animation_1');
 const btn_a_press_animation   = document.getElementById('btn_a_press_animation');
+const btn_bg_fire_bubbles     = document.getElementById('btn_bg_fire_bubbles');
+const cf_magic_trace          = document.getElementById('cf_magic_trace');
+
+/*BACKGROUNDS*/
+btn_bg_fire_bubbles.addEventListener('click', function(){
+    cssBg.setAttribute('href', "bg_fire_bubbles/style.css")
+});
 
 /*CARDS*/
 btn_card_magic_1.addEventListener('click', function(){
@@ -79,3 +91,10 @@ function CssCambiarRuta(archivo, ruta){
     const a = document.getElementById(archivo);
     a.setAttribute("href", ruta)
 }
+
+function JScambiarRuta(archivo, ruta){
+    const scriptElement = document.getElementById(archivo);
+    scriptElement.setAttribute('src', ruta)
+    scriptElement.src = ruta;
+}
+//onclick="JScambiarRuta('src_cursor_follower', 'cursorFollower_magic_particles/script.js')"

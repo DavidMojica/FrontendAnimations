@@ -6,21 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/6134/6134637.png" type="image/x-icon">
     <title>Cerebroxd</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
-    <script src="bg_fire_bubbles/script.js"></script>
 
     <link id="background_animation" rel="stylesheet" href="">
-    <link id="cursor_follower" rel="stylesheet" href="">
     <link rel="stylesheet" href="card_magic_1/style.css">
     <link rel="stylesheet" href="loading_animation_1/style.css">
     <link rel="stylesheet" href="btn_press_animation/style.css">
     <link rel="stylesheet" href="slct_dropable/style.css">
     <link rel="stylesheet" href="demo/style.css">
+    <link id="cursor_follower" rel="stylesheet" href="cursorFollower_magic_particles/style.css">
+    <script id="src_cursor_follower" src=""></script>
+    
+
+    <script id="bg_fire_bubbles_script" src="bg_fire_bubbles/script.js"></script>
     <script src="demo/script.js" defer></script>
 
 </head>
 
 <body>
+    <div id="world-container">
+        <canvas id='world'></canvas>
     <nav>
         <menu>
             <menuitem id="demo1">
@@ -35,7 +41,7 @@
 
                 <menuitem><a>BG animation</a>
                 <menu>
-                    <menuitem><a onclick="CssCambiarRuta('background_animation','bg_fire_bubbles/style.css')">Lava Bubbles</a></menuitem>
+                    <menuitem><a id="btn_bg_fire_bubbles">Lava Bubbles</a></menuitem>
                     <menuitem><a onclick="CssCambiarRuta('background_animation','')">Hide</a></menuitem>
                 </menu>
                 </menuitem>
@@ -68,9 +74,8 @@
 
                 <menuitem><a>Cursor Followers</a>
                 <menu>
-                    <menuitem><a onclick="CssCambiarRuta('cursor_follower','cursorFollower_water/style.css')">Watter Trace</a></menuitem>
-                    <menuitem><a onclick="CssCambiarRuta('cursor_follower','cursorFollower_magic_particles/style.css')">Magic Trace</a></menuitem>
-                    <menuitem><a onclick="CssCambiarRuta('cursor_follower','')">Hide</a></menuitem>
+                    <menuitem><a href="cursorFollower_water/index.html" target="_blank">Watter Trace</a></menuitem>
+                    <menuitem><a href="cursorFollower_magic_particles/index.html" target="_blank">Magic Trace</a></menuitem>
                 </menu>
                 </menuitem>
             </menu>
@@ -81,6 +86,7 @@
     <section id="middle_section">
         
     </section>
+    </div>
 </body>
 
 </html>

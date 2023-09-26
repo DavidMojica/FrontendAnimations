@@ -56,8 +56,9 @@ nav > menu > menuitem menuitem menu {
 /* User Styles Below Not Required */
 
 nav {
-    margin-top: 40px;
-    margin-left: 40px;
+   position: absolute;
+   top: 4vh;
+   left: 4vw;
 }
 
 nav a {
