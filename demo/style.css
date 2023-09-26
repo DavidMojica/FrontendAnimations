@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background: #001219;
+    overflow: hidden;
+}
+
+#middle_section {
+    display: grid;
+    gap: 5vh;
+    align-items: center;
+    justify-content: center;
+    padding-top: 4%;
+}

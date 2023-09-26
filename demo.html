@@ -1,20 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/6134/6134637.png" type="image/x-icon">
     <title>Cerebroxd</title>
+
     <script src="bg_fire_bubbles/script.js"></script>
-    <link rel="stylesheet" href="bg_fire_bubbles/style.css">
+
+    <link id="background_animation" rel="stylesheet" href="">
+    <link id="cursor_follower" rel="stylesheet" href="">
     <link rel="stylesheet" href="card_magic_1/style.css">
     <link rel="stylesheet" href="loading_animation_1/style.css">
+    <link rel="stylesheet" href="btn_press_animation/style.css">
+    <link rel="stylesheet" href="slct_dropable/style.css">
+    <link rel="stylesheet" href="demo/style.css">
+    <script src="demo/script.js" defer></script>
+
 </head>
+
 <body>
-    <div class="card_magic_1">
-        <h1 data-text="Loading..." class="loading_animation">
-            Loading...
-        </h1>
-    </div>
+    <nav>
+        <menu>
+            <menuitem id="demo1">
+            <a>Explore!</a>
+            <menu>
+                <!-- <menuitem><a>BG Color</a>
+                <menu>
+                    <menuitem><a>Default</a></menuitem>
+                    <menuitem><a>Set color</a></menuitem>
+                </menu>
+                </menuitem> Soon...-->
+
+                <menuitem><a>BG animation</a>
+                <menu>
+                    <menuitem><a onclick="CssCambiarRuta('background_animation','bg_fire_bubbles/style.css')">Lava Bubbles</a></menuitem>
+                    <menuitem><a onclick="CssCambiarRuta('background_animation','')">Hide</a></menuitem>
+                </menu>
+                </menuitem>
+
+                <menuitem><a>Cards</a>
+                <menu>
+                    <menuitem><a id="card_magic_1">Magic Card</a></menuitem>
+                    <menuitem><a onclick="deleteCard()">Hide</a></menuitem>
+                </menu>
+                </menuitem>
+
+                <menuitem><a>Loads</a>
+                <menu>
+                    <menuitem><a id="btn_loading_animation_1">Load Anim 1</a></menuitem>
+                    <menuitem><a onclick="deleteLoading()">Hide</a></menuitem>
+                </menu>
+                </menuitem>
+
+                <menuitem><a>Forms</a>
+                <menu>
+                    <menuitem id="demo3">
+                    <a>Buttons</a>
+                    <menu>
+                        <menuitem><a id="btn_a_press_animation">Punching Button</a></menuitem>
+                        <menuitem><a onclick="deleteButtons()">Hide</a></menuitem>
+                    </menu>
+                    </menuitem>
+                </menu>
+                </menuitem>
+
+                <menuitem><a>Cursor Followers</a>
+                <menu>
+                    <menuitem><a onclick="CssCambiarRuta('cursor_follower','cursorFollower_water/style.css')">Watter Trace</a></menuitem>
+                    <menuitem><a onclick="CssCambiarRuta('cursor_follower','cursorFollower_magic_particles/style.css')">Magic Trace</a></menuitem>
+                    <menuitem><a onclick="CssCambiarRuta('cursor_follower','')">Hide</a></menuitem>
+                </menu>
+                </menuitem>
+            </menu>
+            </menuitem>
+        </menu>
+    </nav>
+
+    <section id="middle_section">
+        
+    </section>
 </body>
+
 </html>

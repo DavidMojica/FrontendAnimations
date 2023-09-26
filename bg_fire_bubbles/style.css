@@ -3,20 +3,20 @@
     --around: #ff5400;
 }
 
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} */
 
-body {
+/* body {
     height: 100vh;
     background: #001219;
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
-}
+} */
 
 .circle {
     position: absolute;

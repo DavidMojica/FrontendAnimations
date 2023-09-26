@@ -1,0 +1,30 @@
+:root {
+    --dark: hsl(199, 33%, 15%);
+}
+
+/* body {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: var(--dark);
+} */
+
+.btn_press_animation{
+    --bouncing-offset: 0.35em;
+    --bg: 178, 60%, 48%;
+    background-color: hsl(var(--bg));
+    color: var(--dark);
+    border-radius: 0.5em;
+    padding: 1em;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1;
+    cursor: pointer;
+    box-shadow: 0 var(--bouncing-offset) 0 0 hsl(var(--bg), 0.5);
+}
+.btn_press_animation:active, .btn_press_animation:focus-visible{
+    transform: translateY(var(--bouncing-offset));
+    box-shadow: none;
+}
