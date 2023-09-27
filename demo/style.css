@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     height: 100vh;
     background: #001219;
     overflow: hidden;
@@ -17,4 +17,69 @@ body{
     justify-content: center;
     padding-top: 4%;
     height: 100vh;
+}
+
+.floating_footer {
+    font-family: "Consolas", monospace;
+    position: fixed;
+    bottom: 80px;
+    right: 50px;
+    color: violet;
+    text-align: center;
+    /* Add any other styles you want for your floating footer */
+    display: grid;
+    grid-template-columns: 1fr 0.1fr;
+}
+
+#hiding_footer {
+    transition: opacity 1s ease-in-out;
+}
+.floating_footer h2 {
+    display: block;
+    font-family: "consolas";
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 33.2ch;
+    display: inline-block;
+    animation:
+        typing 5s steps(33),
+        blink 0.5s infinite step-end alternate;
+    overflow: hidden;
+}
+.floating_footer a {
+    text-decoration: none;
+    color: inherit;
+    font-family: inherit;
+    display: inherit;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 49.9ch;
+
+    animation:
+        typing 3s steps(50),
+        blink 0.5s infinite step-end alternate;
+    overflow: hidden;
+}
+#controls_footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#i-blind_footer {
+    cursor: pointer;
+    width: 50px;
+    font-size: 28px;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
 }

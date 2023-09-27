@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/6134/6134637.png" type="image/x-icon">
     <title>Cerebroxd</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
     <link id="background_animation" rel="stylesheet" href="">
@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="demo/style.css">
     <link id="cursor_follower" rel="stylesheet" href="cursorFollower_magic_particles/style.css">
     <script id="src_cursor_follower" src=""></script>
-    
+
 
     <script id="bg_fire_bubbles_script" src="bg_fire_bubbles/script.js"></script>
     <script src="demo/script.js" defer></script>
@@ -27,65 +27,79 @@
 <body>
     <div id="world-container">
         <canvas id='world'></canvas>
-    <nav>
-        <menu>
-            <menuitem id="demo1">
-            <a>Explore!</a>
+        <nav>
             <menu>
-                <!-- <menuitem><a>BG Color</a>
+                <menuitem id="demo1">
+                <a>Start!</a>
                 <menu>
-                    <menuitem><a>Default</a></menuitem>
+                    <!-- <menuitem><a>BG Color</a>
+                <menu>
+                    < menuitem><a>Default</a></menuitem>
                     <menuitem><a>Set color</a></menuitem>
                 </menu>
                 </menuitem> Soon...-->
 
-                <menuitem><a>BG animation</a>
-                <menu>
-                    <menuitem><a id="btn_bg_fire_bubbles">Lava Bubbles</a></menuitem>
-                    <menuitem><a onclick="CssCambiarRuta('background_animation','')">Hide</a></menuitem>
-                </menu>
-                </menuitem>
-
-                <menuitem><a>Cards</a>
-                <menu>
-                    <menuitem><a id="card_magic_1">Magic Card</a></menuitem>
-                    <menuitem><a onclick="deleteCard()">Hide</a></menuitem>
-                </menu>
-                </menuitem>
-
-                <menuitem><a>Loads</a>
-                <menu>
-                    <menuitem><a id="btn_loading_animation_1">Load Anim 1</a></menuitem>
-                    <menuitem><a onclick="deleteLoading()">Hide</a></menuitem>
-                </menu>
-                </menuitem>
-
-                <menuitem><a>Forms</a>
-                <menu>
-                    <menuitem id="demo3">
-                    <a>Buttons</a>
+                    <menuitem><a>BG animation</a>
                     <menu>
-                        <menuitem><a id="btn_a_press_animation">Punching Button</a></menuitem>
-                        <menuitem><a onclick="deleteButtons()">Hide</a></menuitem>
+                        <menuitem><a id="btn_bg_fire_bubbles">Lava Bubbles</a></menuitem>
+                        <menuitem><a onclick="CssCambiarRuta('background_animation','')">Hide</a></menuitem>
+                    </menu>
+                    </menuitem>
+
+                    <menuitem><a>Cards</a>
+                    <menu>
+                        <menuitem><a id="card_magic_1">Magic Card</a>
+                        <menu>
+                            <menuitem><a id="secret_bg_1">Secret BG Nebulosa</a></menuitem>
+                            <menuitem><a id="disable_sbg1">Disable</a></menuitem>
+                        </menu>
+                        </menuitem>
+                        <menuitem><a onclick="deleteCard()">Hide</a></menuitem>
+                    </menu>
+                    </menuitem>
+
+                    <menuitem><a>Loads</a>
+                    <menu>
+                        <menuitem><a id="btn_loading_animation_1">Load Anim 1</a></menuitem>
+                        <menuitem><a onclick="deleteLoading()">Hide</a></menuitem>
+                    </menu>
+                    </menuitem>
+
+                    <menuitem><a>Forms</a>
+                    <menu>
+                        <menuitem id="demo3">
+                        <a>Buttons</a>
+                        <menu>
+                            <menuitem><a id="btn_a_press_animation">Punching Button</a></menuitem>
+                            <menuitem><a onclick="deleteButtons()">Hide</a></menuitem>
+                        </menu>
+                        </menuitem>
+                    </menu>
+                    </menuitem>
+
+                    <menuitem><a>Cursor Followers</a>
+                    <menu>
+                        <menuitem><a href="cursorFollower_water/index.html" target="_blank">Watter Trace</a></menuitem>
+                        <menuitem><a href="cursorFollower_magic_particles/index.html" target="_blank">Magic Trace</a>
+                        </menuitem>
                     </menu>
                     </menuitem>
                 </menu>
                 </menuitem>
-
-                <menuitem><a>Cursor Followers</a>
-                <menu>
-                    <menuitem><a href="cursorFollower_water/index.html" target="_blank">Watter Trace</a></menuitem>
-                    <menuitem><a href="cursorFollower_magic_particles/index.html" target="_blank">Magic Trace</a></menuitem>
-                </menu>
-                </menuitem>
             </menu>
-            </menuitem>
-        </menu>
-    </nav>
+        </nav>
 
-    <section id="middle_section">
-        
-    </section>
+        <section id="middle_section">
+            <footer class="floating_footer">
+                <div id="hiding_footer">
+                    <h2>Welcome to TriAxis Fanim Library </h2> 
+                    <a href="https://github.com/DavidMojicaDev/FrontendAnimations" target="_blank"><p>Watch in GitHub <i class="fa fa-github"></i></p></a>   
+                </div>
+                <div id="controls_footer">
+                    <i class="fa fa-eye-slash" id="i-blind_footer"></i>
+                </div>
+            </footer>
+        </section>
     </div>
 </body>
 
